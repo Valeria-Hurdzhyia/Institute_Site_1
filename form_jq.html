@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Реєстрація</title>
+
+<link rel="stylesheet" href="css/form.css">
+<link rel="shortcut icon" href="images/logo_2.png" type="image/png">
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="JS/pattern.js"></script>
+
+</head>
+<body>
+
+
+<div align="center">
+   <form method="post" class="decor_j">
+      <div class="forms" align="center">  
+<h2 align="center"><font color="crimson" size="6">Реєстрація для абітурієнтів</font><br><font color="aqua" size="5">Заповнюй форму і ми з'єднаємося з тобою</font></h2>
+<input id="name_input" type="text" placeholder="ПІБ" required name="st_name">
+<br>
+<input id="tel_input" type="tel" placeholder="Номер телефону" required name="phone"><br>
+<input id="em_input" type="email" placeholder="Електронна пошта" required name="email"><br>
+   <p>Оберіть спеціальність<br>
+      <select name="specialty">
+         <option value="math">Прикладна математика</option>
+         <option value="physic">Прикладна фізика</option>
+         <option value="cybsec">Кібербезпека</option>
+      </select></p><br>
+   <p><input type = "reset" value = "Очистити ❎">
+   <input type = "submit" value = "Відправити ✅"></p>
+
+
+<div class="alert">
+  <a class="abutton" align="center" href="#overlay">?</a>
+   <div id="overlay">
+      <div class="popup" align="center">
+         <h2>Заповніть цю форму якщо хочете поступити в КПІ</h2>
+<a class="close" href="#">&times;</a>
+         <div class="content">Заповніть, будь ласка, всі поля.<br>ПІБ - призвище, ім'я, по батькові виключно українською мовою, наприклад<br><i>Іванов Іван Іванович</i>.<br>Номер мобільного телефону у форматі<br><i>+380(xx)-xxx-xx-xx</i><br>Електронна пошта у форматі<br><i>name@email.com</i><br>Оберіть одну спеціальність з трьох запропонованих на яку плануєте поступати.
+         </div>
+      </div>
+   </div>
+</div> 
+   
+      </div>
+   </form>
+</div>
+
+<script type="text/javascript" src="js/demo.js"></script>
+</body>
+</head>
+</html>
