@@ -1,0 +1,138 @@
+body{
+	background: #011 url(../images/photo_4.jpg) 0 0 /100% 100% fixed;
+	color: #fff;
+}
+
+a{
+	text-decoration: none;
+}
+
+.forms{
+	margin:30px;
+	background: #000;
+	padding: 10px; 
+	border: 7px dotted #0f0;
+	border-radius: 15%;
+	width: 500px;
+}
+
+.forms input{
+	display: block;
+	background: #efd;
+	font-size: 16px;
+	padding: 10px;
+	border: 2px solid #00f;
+	border-radius: 18px 18px 18px 18px;
+}
+
+.forms input:focus{
+	background: #bcf;
+}
+
+.forms input:hover{
+   	box-shadow: 0 0 30px #55f;
+}
+
+.forms select{
+	background: #efd;
+	font-size: 15px;
+	padding: 10px;
+	border: 2px solid #00f;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.forms select:hover{
+	box-shadow: 0 0 60px #00d;
+}
+
+.forms input[type="submit"], .forms input[type="reset"]{
+	display: inline-block;
+	background: #ff0;
+	font-size: 16px;
+	padding: 10px;
+	border: 2px solid #3a0;
+	cursor: pointer;
+	transition: 0.2s;
+	margin: 0 5px 5px 5px;
+}
+
+.forms input[type="submit"]:hover, .forms input[type="reset"]:hover{
+	background: #Fa0;
+	border: 2px solid #33b;
+	box-shadow: 0 0 30px #dd0;
+	transform: scale(1.1);
+}
+
+.abutton{
+	display: inline-block;
+	text-align: center;
+	font-weight: 600;
+	color: #f00;
+	transition: 0.3s;
+}
+
+.abutton:hover{
+	transform: scale(2.5);
+ }
+
+.alert a{
+	font-size: 30px;
+}
+
+#overlay{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(7, 20, 0, 0.9);
+	transition: opacity 0.5s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#overlay:target{
+	visibility: visible;
+	opacity: 1; 
+}
+
+.popup{
+	margin: 30px auto;
+	padding: 30px;
+	background: #EFD218;
+	border-radius: 20px;
+	width: 40%;
+	position: relative;
+}
+
+.popup h2{
+	font-size: 35px;
+	margin-top: 5px;
+	color: #315606;
+	font-family: Snell Roundhand, cursive;
+}
+
+.popup .close{
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	color: #200;
+	font-size: 40px;
+	font-weight: 900;
+	text-decoration: none;
+	transition: all 200ms;
+}
+
+.popup .close:hover {
+	color: red;
+}
+
+.popup .content {
+	overflow: auto;
+	font-size: 27px;
+	color: #000;
+}
+
+.input_error {
+	color: red;
+}
